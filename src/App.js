@@ -1,19 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-const descr = (
-<div>
-    <p>Тут мы считаем числа 3 и 2 и получается = {3+2}</p>
-</div>
-);
 
-function App() {
+
+function App() {    //Всю структуру мы строим через этот компонент и дальше его просто рендерим в точке входа через index
   return (
     <div className="App">
-        <h1>Hello React!</h1>
-        {descr}
+        <Header/>
+        <Descr/>
     </div>
   );
 }
+
+function Header() {
+    return (
+        <h1>Hello React!</h1>
+    )
+}
+
+function Descr() {
+    return (
+        <p>Здесь мы считаем цифры 2 и 7 = {2 + 7}</p>
+    )
+}
+
+
 
 export default App;
