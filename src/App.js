@@ -7,7 +7,7 @@ function App() {    //Всю структуру мы строим через э�
   return (
     <div className="App">
         <Header/>
-        <Descr/>
+        <Descr firstDigit={2} secondDigit={7}/>
     </div>
   );
 }
@@ -18,9 +18,9 @@ function Header() {
     )
 }
 
-function Descr() {
+function Descr({firstDigit, secondDigit}) {
     return (
-        <p>Здесь мы считаем цифры 2 и 7 = {2 + 7}</p>
+        <p>Здесь мы считаем цифры 2 и 7 = {firstDigit + secondDigit}</p>
     )
 }
 
