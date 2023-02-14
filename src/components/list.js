@@ -1,4 +1,4 @@
-import data from "./lib";
+
 import ListItem from "./list-item";
 
 function List({data}) {
