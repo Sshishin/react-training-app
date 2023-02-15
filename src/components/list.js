@@ -4,7 +4,7 @@ import ListItem from "./list-item";
 function List({data}) {
    const elem = data.map(item => {
         return (
-            <ListItem id={item.id} surname={item.surname}/>
+            <ListItem key={item.key} id={item.id} surname={item.surname}/>
         )
    })
 
@@ -16,4 +16,3 @@ function List({data}) {
 }
 
 export default List
-// Сделать так как это должно быть (список с элементами списка)
