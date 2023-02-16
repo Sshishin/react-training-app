@@ -11,7 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Rating />
+    <Rating variable={2}/>
+    <Rating variable={3}/>
+    <Rating variable={1}/>
     <List data={data} />
   </React.StrictMode>
 );
