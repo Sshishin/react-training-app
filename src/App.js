@@ -1,7 +1,5 @@
 import './App.css';
 
-
-
 function App() {    //Всю структуру мы строим через этот компонент и дальше его просто рендерим в точке входа через index
     return (
         <div className="App">
@@ -24,7 +22,5 @@ function Descr({ firstDigit, secondDigit }) {
         <p>Здесь мы считаем цифры 2 и 7 = {firstDigit + secondDigit}</p>
     )
 }
-
-
 
 export default App;
