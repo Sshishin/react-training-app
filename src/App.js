@@ -1,10 +1,12 @@
 import './App.css';
+import {TestStyled} from './components/rating';
 
 function App() {    //Всю структуру мы строим через этот компонент и дальше его просто рендерим в точке входа через index
     return (
         <div className="App">
             <Header check={false}/>
             <Descr firstDigit={2} secondDigit={7} />
+            <TestStyled/>
         </div>
     );
 }

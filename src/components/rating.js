@@ -1,5 +1,22 @@
-import '../components/rating.css'
+import '../components/rating.css';
+import styled from 'styled-components';
 
+const Wrapper = styled.div`
+    font-size: 30px;
+    color: red;
+`;
+
+const ChangedWrapper = styled(Wrapper)`
+    color: green;
+`;
+
+function TestStyled(props) {
+    return (
+        <ChangedWrapper as="button">
+            <h1>Something</h1>
+        </ChangedWrapper>
+    )
+}
 
 function Rating(props) {
     if(props.variable === 3) {
@@ -52,4 +69,5 @@ function Star(props) {
     
 }
 
+export {TestStyled}
 export default Rating;
