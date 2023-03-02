@@ -1,21 +1,25 @@
 import './App.css';
-import {TestStyled} from './components/rating';
+import { TestStyled } from './components/rating';
+import Counter from './Counter';
 
 function App() {    //Всю структуру мы строим через этот компонент и дальше его просто рендерим в точке входа через index
     return (
         <div className="App">
-            <Header check={false}/>
+            <Header check={false} />
             <Descr firstDigit={2} secondDigit={7} />
-            <TestStyled/>
+            <TestStyled />
+            <Counter />
         </div>
     );
 }
 
+
+
 function Header(props) {
-    if(props.check) {
-       return <h1>Hello React!</h1>
+    if (props.check) {
+        return <h1>Hello React!</h1>
     } else {
-       return <h1>Goodbye React!</h1>
+        return <h1>Goodbye React!</h1>
     }
 }
 
